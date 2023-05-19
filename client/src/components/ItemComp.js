@@ -30,9 +30,9 @@ function ItemComp() {
     });
     return (
         <>
-        {SingleItem.length == 0 && !isloading ? <div className="text-center w-100 mb-5">
+        {SingleItem.length === 0 && !isloading ? <div className="text-center w-100 mb-5">
             <h3 className="pb-0">Opps! Items Not Found</h3>
-            <img class="pngImg" src="img/notfound2.png" width="400" />
+            <img class="pngImg" src="img/notfound2.png" width="400" alt="image" />
             </div> :
             <div className="row d-flex justify-content-center mx-2 my-3">
                 {
