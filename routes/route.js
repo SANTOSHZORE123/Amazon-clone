@@ -10,6 +10,7 @@ require("../db/conn")
 
 router.post("/getallprods", async (req, res) => {
     let data = await Product.find();
+    console.log(data)
     res.status(200).json(data);
 })
 router.post("/seeprod", async (req, res) => {

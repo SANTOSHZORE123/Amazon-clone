@@ -20,16 +20,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/darshanahire/amazon.git"
+    "build": "react-scripts build"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/darshanahire/amazon/issues"
-  },
-  "homepage": "https://github.com/darshanahire/amazon#readme"
+  "license": "ISC"
 }
