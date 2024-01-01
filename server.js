@@ -14,7 +14,11 @@ const router=require('./routes/route');
 
 
 
-app.use(cors())
+app.use(cors({
+    origin:["https://mern-stack-amazon-clone-psi.vercel.app/"],
+    methods:["POST","GET"],
+    credentials:true
+}))
 app.use(express.json());
 app.use(cookieParser());
 app.use(router)
